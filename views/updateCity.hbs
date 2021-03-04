@@ -1,0 +1,27 @@
+<h3>Please make sure your submitted information is accurate and real.</h3>
+
+<div>
+    <form method="post" action="/update/{{_id}}">
+    <h1>toto {{_id}} </h1>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" value="{{name}}">
+
+        <label for="country">Country</label>
+        <input type="text" name="country" id="country" value="{{country}}">
+
+        <label for="population">Population</label>
+        <input type="text" name="population" id="population" >
+
+        <label for="subway">Transit System</label>
+        <input type="text" name="subway" id="subway">
+
+        <label for="crimeRate">Crime Rate</label>
+        <input type="text" name="crimeRate" id="crimeRate" value="{{crimeRate}}">
+
+        <label for="website">Website</label>
+        <input type="text" name="website" id="website">
+
+        <button>Update</button>
+        <button>Delete</button>
+    </form>
+</div>

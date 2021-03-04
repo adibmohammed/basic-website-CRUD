@@ -1,0 +1,18 @@
+<h2>Here are our covered cities</h2>
+
+{{#each mycities}}
+<div>City: {{this.name}}</div>
+<div>Country: {{this.country}}</div>
+<div>Population: {{this.population}}</div>
+<div>Rapid Transit System: {{this.subway}}</div>
+<div>Crime Level: {{this.crimeRate}}</div>
+<div>Learn More about {{this.name}} {{this.website}}</div>
+<div>Missing or inaccurate information? <a href="/update/{{this._id}}">UPDATE</a></div>
+<div>Changed your mind? <a href="/delete/{{this._id}}">Delete</a></div>
+<div>&nbsp;</div>
+
+{{/each}}
+<div>Couldn't find your city? <a href="/newcity">Submit yours for review</a></div>
+
+<div>&nbsp;</div>
+
